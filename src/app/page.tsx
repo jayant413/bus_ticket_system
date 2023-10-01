@@ -27,6 +27,7 @@ export default function Home() {
     }
     setQrTitle(title);
     setQr(link);
+    toast.success("QR Code Generated Successfully");
   };
 
   useEffect(() => {
