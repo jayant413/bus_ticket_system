@@ -8,7 +8,7 @@ import QRCode from "react-qr-code";
 
 export default function Home() {
   const [qr, setQr] = useState(
-    "https://sih.gov.in/sih2023PS?technology_bucket=QWxs&category=U29mdHdhcmU=&organization=QWxs&organization_type=QWxs"
+    "https://drive.google.com/file/d/1xYX863KNnNrfrX6hrZmP0aD2CfqhqKRk/view?usp=sharing"
   );
   const [qrTitle, setQrTitle] = useState(
     "Smart India Hackathon - Real-Time Vehicle Tracking system."
@@ -18,11 +18,11 @@ export default function Home() {
   const [title, setTitle] = useState("");
 
   const GenerateQr = () => {
-    if (link == "") {
-      toast.error("Enter a valid link");
-      return;
-    } else if (title == "") {
+    if (title == "") {
       toast.error("Enter a valid title");
+      return;
+    } else if (link == "") {
+      toast.error("Enter a valid link");
       return;
     }
     setQrTitle(title);
