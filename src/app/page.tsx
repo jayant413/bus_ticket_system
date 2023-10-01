@@ -35,12 +35,15 @@ export default function Home() {
   return (
     <div className="h-[100vh] w-full bg-blue-950 text-white flex items-center justify-evenly flex-col  ">
       <div className="flex flex-col gap-y-3  justify-center items-center">
-        <span className="font-bold text-3xl"> Bus Ticket Generation</span>
-        <span className="mb-3 text-2xl font-bold ">
+        <span className="font-bold text-3xl text-orange-500">
           {" "}
-          Title :
-          <span className="font-medium ml-3  text-orange-500">{qrTitle}</span>
+          Bus Ticket Generation
         </span>
+        <div className="mb-3 text-2xl font-bold text-white flex-col flex justify-center items-center gap-y-3">
+          {" "}
+          <span>Title :</span>
+          <span className="font-medium ml-3  text-green-500">{qrTitle}</span>
+        </div>
       </div>
       {qr.length > 0 ? (
         <div className=" font-bold text-xl gap-y-3 ">
